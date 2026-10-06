@@ -1,0 +1,399 @@
+:root{--bg:#fbf8f3;--card:#fffdf9;--sand:#f1e9dd;--sand2:#e8ddcc;--ink:#292929;--muted:#77736d;--navy:#172131;--line:#e9e1d6;--green:#56745d;--red:#9a5555;--shadow:0 14px 35px rgba(35,29,20,.07);--r:20px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.serif,h1,h2{font-family:Georgia,"Times New Roman",serif}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:28px 18px;background:#f8f3eb;border-right:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;padding:0 10px 28px;font-family:Georgia,serif;font-weight:700;font-size:18px}.brand-mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:white}.nav{display:grid;gap:7px}.nav a{padding:11px 13px;border-radius:13px;color:#595650;display:flex;gap:11px;align-items:center}.nav a:hover,.nav a.active{background:var(--sand2);color:var(--ink)}.nav .bottom{margin-top:24px}.main{padding:34px 4vw 60px;min-width:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:30px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}h1{font-size:34px;margin:4px 0 0}h2{font-size:23px;margin:0 0 15px}.user-chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 14px}.grid{display:grid;gap:18px}.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.two{grid-template-columns:1.5fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.card{background:rgba(255,253,249,.9);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}.stat strong{display:block;font-family:Georgia,serif;font-size:31px;margin-top:8px}.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:11px 16px;background:var(--navy);color:#fff;cursor:pointer}.btn.light{background:var(--sand);color:var(--ink)}.btn.danger{background:#7f4545}.btn.small{padding:7px 10px;font-size:13px}.actions{display:flex;gap:8px;flex-wrap:wrap}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field input,.field select,.field textarea,.search{width:100%;padding:12px 13px;border:1px solid #ddd3c5;background:#fff;border-radius:12px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8f877c;box-shadow:0 0 0 3px rgba(143,135,124,.12)}.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:760px}.table th,.table td{text-align:left;padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:middle}.table th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:var(--sand);font-size:12px;text-transform:capitalize}.badge.approved,.badge.completed{background:#e4eee5;color:#3f6547}.badge.rejected,.badge.cancelled{background:#f3e1df;color:#8a4848}.notice{padding:12px 15px;border-radius:12px;background:#e7efe8;margin-bottom:18px}.notice.error{background:#f5e3e0}.service-card{display:grid;gap:12px}.service-icon{height:115px;border-radius:16px;background:linear-gradient(135deg,#e9dfd1,#f8f3eb);display:grid;place-items:center;font-family:Georgia,serif;font-size:34px}.timeline{display:grid;gap:0}.timeline-item{padding:0 0 22px 24px;border-left:2px solid var(--sand2);position:relative}.timeline-item:before{content:"";position:absolute;left:-7px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--navy)}.login-page{min-height:100vh;display:grid;place-items:center;padding:25px;background:radial-gradient(circle at top right,#eee4d5,transparent 35%),var(--bg)}.auth-card{width:min(460px,100%);padding:34px}.mobile-toggle{display:none}.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.day{min-height:90px;padding:9px;background:#fff;border:1px solid var(--line);border-radius:12px}.day strong{font-size:12px}.event-dot{margin-top:6px;padding:5px;border-radius:7px;background:var(--sand);font-size:11px}.hero{min-height:100vh;padding:30px 7vw;display:grid;align-content:center;background:radial-gradient(circle at 80% 20%,#e9dfd0 0,transparent 28%),var(--bg)}.hero-inner{max-width:1050px}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.98;max-width:850px}.hero p{font-size:18px;max-width:650px}.hero-actions{display:flex;gap:12px;margin-top:25px}.preview{margin-top:55px;display:grid;grid-template-columns:2fr 1fr;gap:18px}.preview .card{min-height:170px}@media(max-width:1000px){.stats,.three{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}@media(max-width:760px){.shell{grid-template-columns:1fr}.sidebar{position:fixed;z-index:20;transform:translateX(-105%);transition:.25s;width:260px;box-shadow:var(--shadow)}body.nav-open .sidebar{transform:translateX(0)}.mobile-toggle{display:inline-flex}.main{padding:22px 18px 45px}.stats,.three,.form-grid,.preview{grid-template-columns:1fr}.topbar{align-items:flex-start}.user-chip{display:none}.hero{padding:28px 22px}.hero h1{font-size:48px}.calendar-grid{gap:4px}.day{min-height:62px;padding:5px}.event-dot{font-size:9px}}
+
+/* Unified public authentication */
+.public-header{position:absolute;z-index:10;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:24px 7vw}.public-header .brand{padding:0}.public-login{min-width:96px}.landing-hero{padding-top:110px}.auth-divider{display:flex;align-items:center;gap:12px;margin:24px 0 16px;color:var(--muted);font-size:12px}.auth-divider:before,.auth-divider:after{content:"";height:1px;flex:1;background:var(--line)}.auth-create{width:100%}.auth-note{text-align:center;font-size:12px;margin:13px 10px 0}@media(max-width:760px){.public-header{padding:18px 22px}.public-brand{font-size:16px}.public-brand .brand-mark{width:34px;height:34px}.landing-hero{padding-top:105px}}
+.address-fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.address-fields .wide{grid-column:1/-1}.address-help{grid-column:1/-1;margin-top:-5px;font-size:12px;color:var(--muted)}.field select:disabled{opacity:.65;cursor:not-allowed}@media(max-width:760px){.address-fields{grid-template-columns:1fr}.address-fields .wide,.address-help{grid-column:auto}}
+
+/* Clickable service booking cards */
+.service-card.booking-card{cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;overflow:hidden}
+.service-card.booking-card:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(17,24,39,.08);border-color:rgba(17,24,39,.16)}
+.service-card.booking-card.is-open{border-color:rgba(17,24,39,.25);box-shadow:0 16px 36px rgba(17,24,39,.09)}
+.service-card .card-click-area{display:block}
+.service-card .booking-panel{display:none;margin-top:18px;padding-top:18px;border-top:1px solid var(--border,#e6ded2);cursor:default}
+.service-card.is-open .booking-panel{display:block}
+.service-card .booking-panel .form-grid{grid-template-columns:1fr 1fr}
+.service-card .booking-panel .field.full{grid-column:1/-1}
+.service-card .booking-hint{font-size:12px;margin-top:10px;color:#7b746b}
+@media(max-width:800px){.service-card .booking-panel .form-grid{grid-template-columns:1fr}}
+
+/* Service booking modal */
+body.modal-open{overflow:hidden}.booking-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px}.booking-modal.is-open{display:flex}.booking-modal-backdrop{position:absolute;inset:0;background:rgba(17,24,39,.46);backdrop-filter:blur(4px);animation:modalFade .18s ease}.booking-modal-dialog{position:relative;z-index:1;width:min(720px,100%);max-height:calc(100vh - 48px);overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 28px 80px rgba(17,24,39,.22);animation:modalRise .2s ease}.booking-modal-dialog h2{font-size:30px;margin:5px 42px 6px 0}.booking-modal-dialog>p{margin:0 0 22px}.booking-modal-close{position:absolute;top:18px;right:18px;width:38px;height:38px;border:0;border-radius:50%;background:var(--sand);color:var(--ink);font-size:26px;line-height:1;cursor:pointer}.booking-modal-close:hover{background:var(--sand2)}.booking-modal .form-grid{grid-template-columns:1fr 1fr}.booking-modal .field.full{grid-column:1/-1}.modal-actions{display:flex!important;flex-direction:row;gap:10px}.modal-actions .btn:first-child{flex:1}.booking-card .card-click-area{cursor:pointer}.booking-card:focus-within{border-color:rgba(17,24,39,.24)}@keyframes modalFade{from{opacity:0}to{opacity:1}}@keyframes modalRise{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:none}}@media(max-width:700px){.booking-modal{padding:12px;align-items:flex-end}.booking-modal-dialog{max-height:90vh;border-radius:22px 22px 14px 14px;padding:24px 18px}.booking-modal .form-grid{grid-template-columns:1fr}.booking-modal .field.full{grid-column:auto}.modal-actions{flex-direction:column!important}.modal-actions .btn{width:100%}}
+
+/* Cinema-style booking availability */
+.slot-help{padding:10px 12px;border-radius:10px;background:#f6f1e9;color:var(--muted);font-size:13px}.time-slots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin-top:10px}.time-slot{border:1px solid #d8cdbc;background:#fff;color:var(--ink);border-radius:11px;padding:11px 7px;font-weight:600;cursor:pointer;transition:.15s ease}.time-slot.is-available:hover{border-color:var(--navy);transform:translateY(-1px);box-shadow:0 5px 14px rgba(23,33,49,.08)}.time-slot.is-selected{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 6px 16px rgba(23,33,49,.18)}.time-slot.is-booked{background:#eee9e2;color:#aaa39a;border-color:#e1d9ce;text-decoration:line-through;cursor:not-allowed;opacity:.7}.slot-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:12px}.slot-legend span{display:flex;align-items:center;gap:6px}.slot-dot{width:9px;height:9px;border-radius:50%;display:inline-block}.slot-dot.available{background:#6f8d73}.slot-dot.booked{background:#b7afa5}@media(max-width:700px){.time-slots{grid-template-columns:repeat(3,1fr)}}
+
+/* Booking availability — cinema-style time selection */
+.availability-field > span{display:block;margin-bottom:8px}.availability-help{font-size:13px;color:#756f66;margin:0 0 12px}.availability-help.availability-error{color:#a23b36;font-weight:600}.time-slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.time-slot{min-height:62px;border:1px solid #ded5c8;border-radius:12px;background:#fff;padding:9px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:inherit;transition:.18s ease}.time-slot strong{font-size:14px}.time-slot small{font-size:10px;color:#777168}.time-slot.is-available{cursor:pointer;background:#fbfaf7}.time-slot.is-available:hover{border-color:#172234;transform:translateY(-1px);box-shadow:0 5px 14px rgba(17,24,39,.08)}.time-slot.is-selected{background:#172234;border-color:#172234;color:#fff;box-shadow:0 7px 16px rgba(17,24,39,.18)}.time-slot.is-selected small{color:#e8e4dc}.time-slot.is-booked{background:#eeeae4;color:#aaa39a;border-color:#e3ddd4;cursor:not-allowed;text-decoration:none;opacity:.72}.time-slot.is-booked small{color:#a14d48;font-weight:600}.slot-legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:12px;font-size:11px;color:#777168}.slot-legend span{display:flex;align-items:center;gap:6px}.slot-dot{width:9px;height:9px;border-radius:50%;display:inline-block}.slot-dot.available{background:#172234}.slot-dot.booked{background:#c9c1b7}.slots-loading{grid-column:1/-1;padding:18px;text-align:center;border:1px dashed #ddd3c6;border-radius:12px;color:#777168}@media(max-width:700px){.time-slots{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:430px){.time-slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Payments and appointment QR */
+.payment-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.payment-options label{display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:start;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff;cursor:pointer}.payment-options label input{grid-row:1/3;margin-top:4px}.payment-options label b,.payment-options label small{grid-column:2}.payment-options label small{color:var(--muted)}.payment-options label.is-disabled{opacity:.55;cursor:not-allowed}.gcash-panel{padding:16px;border:1px solid #d8e2ef;border-radius:16px;background:#f7fbff}.gcash-panel[hidden]{display:none!important}.gcash-box{display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:center;margin-bottom:15px}.gcash-box img,.payment-qr{width:180px;max-width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px}.gcash-number{font-size:22px;font-weight:700;letter-spacing:.04em}.payment-placeholder{height:180px;width:180px;display:grid;place-items:center;text-align:center;background:var(--sand);border-radius:14px;color:var(--muted)}.appointment-qr-card{margin-top:22px;padding:22px;text-align:center;border:1px solid var(--line);border-radius:18px;background:#fff}.appointment-qr{width:220px;max-width:100%;height:auto;padding:8px;background:#fff;border:1px solid var(--line);border-radius:14px}.qr-reference{font:700 20px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;margin:12px 0 18px}@media(max-width:700px){.payment-options{grid-template-columns:1fr}.gcash-box{grid-template-columns:1fr;text-align:center}.gcash-box img{margin:auto}}
+
+/* GCash QR preview and copy-number controls */
+.gcash-qr-trigger{border:0;background:transparent;padding:0;cursor:zoom-in;text-align:center;color:var(--muted);font:inherit}.gcash-qr-trigger img{display:block;width:180px;max-width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;transition:transform .18s ease,box-shadow .18s ease}.gcash-qr-trigger:hover img,.gcash-qr-trigger:focus-visible img{transform:scale(1.025);box-shadow:0 10px 28px rgba(17,24,39,.12)}.gcash-qr-trigger span{display:block;margin-top:7px;font-size:12px}.gcash-number-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.gcash-number-row .gcash-number{margin:0}.copy-number-btn{border:1px solid var(--line);background:var(--sand);color:var(--ink);border-radius:10px;padding:8px 13px;font:600 13px/1 inherit;cursor:pointer;transition:.18s ease}.copy-number-btn:hover{background:#e9dfd0}.copy-number-btn.is-copied{background:#e4f2e8;border-color:#c5dfcd;color:#2f6b40}.qr-lightbox{position:fixed;inset:0;z-index:1200;display:none;place-items:center;padding:24px}.qr-lightbox.is-open{display:grid}.qr-lightbox-backdrop{position:absolute;inset:0;background:rgba(17,24,39,.72);backdrop-filter:blur(5px)}.qr-lightbox-dialog{position:relative;z-index:1;width:min(620px,94vw);max-height:92vh;overflow:auto;background:var(--paper,#fffaf5);border:1px solid var(--line);border-radius:24px;padding:30px;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.28)}.qr-lightbox-close{position:absolute;right:18px;top:16px;width:42px;height:42px;border:0;border-radius:50%;background:var(--sand);font-size:28px;line-height:1;cursor:pointer}.gcash-qr-full{display:block;width:min(430px,80vw);height:auto;max-height:60vh;object-fit:contain;margin:18px auto;padding:10px;background:#fff;border:1px solid var(--line);border-radius:18px;image-rendering:auto}.gcash-number-row.centered{justify-content:center;margin:10px 0 14px}@media(max-width:700px){.gcash-qr-trigger{margin:auto}.gcash-number-row{justify-content:center}.qr-lightbox{padding:12px}.qr-lightbox-dialog{padding:26px 16px 20px;border-radius:20px}}
+
+/* Profile photos */
+.user-chip{display:flex;align-items:center;gap:9px}.user-avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;display:grid;place-items:center;flex:0 0 34px;border:1px solid var(--line)}.user-avatar-fallback{background:var(--navy);color:#fff;font-weight:700}.profile-photo-editor{display:flex;align-items:center;gap:18px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.profile-photo-preview{width:88px;height:88px;border-radius:50%;object-fit:cover;border:1px solid var(--line);flex:0 0 88px}.profile-photo-fallback{display:grid;place-items:center;background:var(--navy);color:#fff;font-size:30px;font-weight:700}.profile-photo-editor input[type=file]{max-width:100%}.profile-photo-help{font-size:12px;margin-top:7px}@media(max-width:760px){.profile-photo-editor{align-items:flex-start;flex-direction:column}.topbar .user-chip{display:flex;padding:6px}.topbar .user-chip>span:last-child{display:none}}
+
+
+/* Instant search and filtering */
+.live-filter-bar{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:16px;padding:14px;background:#f8f3eb;border:1px solid var(--line);border-radius:16px}.live-filter-bar .field{min-width:170px;flex:1}.live-filter-bar .live-search-field{flex:2;min-width:240px}.live-filter-meta{font-size:12px;color:var(--muted);padding:0 3px 10px;white-space:nowrap}.live-empty{padding:22px;text-align:center;color:var(--muted)}[data-live-item][hidden]{display:none!important}@media(max-width:760px){.live-filter-bar{align-items:stretch}.live-filter-bar .field,.live-filter-bar .live-search-field{min-width:100%;width:100%}.live-filter-bar .btn{width:100%}}
+
+/* Admin QR / reference scanner */
+.verify-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}.scanner-card h2,.manual-verify h2{margin:4px 0 8px}.scanner-viewport{position:relative;overflow:hidden;aspect-ratio:16/9;min-height:260px;margin:16px 0 12px;border-radius:18px;background:#121923;border:1px solid var(--line)}.scanner-viewport video{width:100%;height:100%;object-fit:cover;display:block}.scanner-placeholder{position:absolute;inset:0;display:grid;place-items:center;color:#d8d3ca;background:linear-gradient(135deg,#172131,#293446)}.scanner-placeholder[hidden]{display:none}.scanner-frame{position:absolute;left:50%;top:50%;width:min(240px,62%);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}.scanner-frame span{position:absolute;width:42px;height:42px;border-color:#fff;border-style:solid;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}.scanner-frame span:nth-child(1){left:0;top:0;border-width:4px 0 0 4px;border-radius:10px 0 0 0}.scanner-frame span:nth-child(2){right:0;top:0;border-width:4px 4px 0 0;border-radius:0 10px 0 0}.scanner-frame span:nth-child(3){left:0;bottom:0;border-width:0 0 4px 4px;border-radius:0 0 0 10px}.scanner-frame span:nth-child(4){right:0;bottom:0;border-width:0 4px 4px 0;border-radius:0 0 10px 0}.scanner-status{padding:10px 12px;margin-bottom:12px;border-radius:10px;background:var(--sand);color:var(--muted);font-size:13px}.scanner-status.success{background:#e4eee5;color:#3f6547}.scanner-status.error{background:#f3e1df;color:#8a4848}.scanner-help{font-size:12px;margin:12px 0 0}.manual-verify{align-content:start}.verify-result{margin-top:0}@media(max-width:900px){.verify-grid{grid-template-columns:1fr}.scanner-viewport{min-height:220px}}@media(max-width:520px){.scanner-viewport{min-height:190px}.scanner-frame{width:58%}}
+
+/* Physical barcode / QR scanner verification */
+.scanner-input-card{max-width:900px}
+.scanner-input-card #referenceInput{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase}
+.scanner-ready{display:flex;align-items:center;gap:9px;color:#667085;font-size:.92rem;margin-top:-2px}
+.scanner-ready-dot{width:10px;height:10px;border-radius:50%;background:#1a2332;box-shadow:0 0 0 5px rgba(26,35,50,.08);flex:none}
+.scanner-ready.active{color:#1a2332}
+
+/* Cleaner admin service management */
+.services-admin-layout{display:grid;grid-template-columns:minmax(320px,.8fr) minmax(520px,1.4fr);gap:20px;align-items:start}.service-editor-card{position:sticky;top:24px}.service-editor-head,.service-manager-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.service-manager-head p{margin:-7px 0 14px}.service-count{white-space:nowrap;padding:6px 10px;border-radius:999px;background:var(--sand);color:var(--muted);font-size:12px}.service-filter{margin-top:8px}.service-manage-list{display:grid}.service-manage-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;padding:18px 2px;border-top:1px solid var(--line)}.service-manage-item:first-child{border-top:0}.service-manage-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.service-manage-title h3{font-family:Georgia,"Times New Roman",serif;font-size:19px;margin:0}.service-manage-main p{margin:5px 0 8px;color:var(--muted);max-width:680px}.service-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--muted)}.service-manage-actions{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.service-manage-actions form{margin:0}.badge.active{background:#e4eee5;color:#3f6547}.badge.inactive{background:#eee9e2;color:#756f66}@media(max-width:1100px){.services-admin-layout{grid-template-columns:1fr}.service-editor-card{position:static}}@media(max-width:680px){.service-manager-head,.service-editor-head{flex-direction:column}.service-manage-item{grid-template-columns:1fr}.service-manage-actions{justify-content:flex-start}.service-manage-actions .btn{flex:1}.service-count{align-self:flex-start}}
+
+/* Parishioner mobile dashboard + appointments cleanup */
+@media(max-width:760px){
+  .parish-dashboard-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .parish-dashboard-stats .card{padding:16px;min-height:104px;box-shadow:0 8px 22px rgba(35,29,20,.05)}
+  .parish-dashboard-stats .stat strong{font-size:27px;margin-top:5px}
+  .dashboard-section-head{align-items:center;margin-bottom:10px!important}
+  .dashboard-section-head h2{font-size:25px;margin:0}
+  .dashboard-section-head .btn{white-space:nowrap}
+  .dashboard-upcoming{padding:18px}
+  .dashboard-upcoming-wrap{overflow:visible}
+  .dashboard-upcoming-table{min-width:0;display:block}
+  .dashboard-upcoming-table thead{display:none}
+  .dashboard-upcoming-table tbody{display:grid;gap:10px}
+  .dashboard-upcoming-table tr{position:relative;display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}
+  .dashboard-upcoming-table td{padding:0;border:0;display:block}
+  .dashboard-upcoming-table .dash-appt-main{grid-column:1/2;padding-right:4px}
+  .dashboard-upcoming-table .dash-appt-main b{font-size:16px}
+  .dashboard-upcoming-table .dash-appt-main small{display:block;margin-top:2px;color:var(--muted);overflow-wrap:anywhere}
+  .dashboard-upcoming-table .dash-appt-status{grid-column:2;grid-row:1;align-self:start}
+  .dashboard-upcoming-table .dash-appt-date,.dashboard-upcoming-table .dash-appt-time{grid-column:1/-1;color:var(--muted);font-size:13px}
+  .dashboard-upcoming-table .dash-appt-date{margin-top:5px}
+  .dashboard-upcoming-table .dash-appt-date:before{content:"Schedule: ";font-weight:600;color:var(--ink)}
+  .dashboard-upcoming-table .dash-appt-time:before{content:"Time: ";font-weight:600;color:var(--ink)}
+
+  .appointments-page-card{padding:16px;overflow:visible}
+  .appointments-page-card>.actions{justify-content:stretch!important}
+  .appointments-page-card>.actions .btn{width:100%}
+  .appointments-page-card .live-filter-bar{padding:12px;margin-bottom:14px}
+  .appointments-page-card .live-filter-meta{padding:2px 2px 0}
+  .appointments-table{min-width:0;display:block}
+  .appointments-table thead{display:none}
+  .appointments-table tbody{display:grid;gap:12px}
+  .appointments-table tr[data-live-item]{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:15px;border:1px solid var(--line);border-radius:15px;background:#fff}
+  .appointments-table td{padding:0;border:0;display:block;min-width:0}
+  .appointments-table .appt-service{grid-column:1;grid-row:1;font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:700}
+  .appointments-table .appt-status{grid-column:2;grid-row:1;align-self:start}
+  .appointments-table .appt-reference{grid-column:1/-1;grid-row:2;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+  .appointments-table .appt-reference b{font-weight:600}
+  .appointments-table .appt-schedule{grid-column:1/-1;grid-row:3;font-size:13px}
+  .appointments-table .appt-schedule:before{content:"Schedule";display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-top:5px}
+  .appointments-table .appt-resource{grid-column:1/-1;grid-row:4;font-size:13px}
+  .appointments-table .appt-resource:before{content:"Resource: ";color:var(--muted)}
+  .appointments-table .appt-action{grid-column:1/-1;grid-row:5;margin-top:5px}
+  .appointments-table .appt-action .actions{display:grid;grid-template-columns:1fr;gap:7px}
+  .appointments-table .appt-action .btn,.appointments-table .appt-action form,.appointments-table .appt-action form .btn{width:100%}
+  .appointments-table tr.live-empty{display:block;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:14px}
+  .appointments-table tr.live-empty td{display:block}
+}
+@media(max-width:420px){
+  .parish-dashboard-stats{grid-template-columns:1fr 1fr}
+  .dashboard-section-head{align-items:flex-start;flex-direction:column}
+  .dashboard-section-head .btn{width:100%}
+}
+
+/* Uniform parishioner mobile experience */
+@media(max-width:760px){
+  body{overflow-x:hidden}
+  .main{padding:18px 14px 34px;width:100%;overflow:hidden}
+  .topbar{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:10px;margin-bottom:18px}
+  .topbar>div:first-child{min-width:0;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:10px;align-items:center}
+  .topbar .mobile-toggle{grid-row:1/3;align-self:center;width:42px;height:42px;padding:0;border-radius:12px;font-size:20px}
+  .topbar .eyebrow{grid-column:2;font-size:10px;letter-spacing:.1em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar h1{grid-column:2;font-size:28px;line-height:1.08;margin:2px 0 0;overflow-wrap:anywhere}
+  .topbar .user-chip{align-self:center;padding:4px;border-radius:50%;background:#fff}
+  .topbar .user-avatar{width:38px;height:38px;flex-basis:38px}
+  .card{padding:17px;border-radius:17px;box-shadow:0 8px 24px rgba(35,29,20,.055)}
+  h2{font-size:22px;line-height:1.15}.eyebrow{font-size:11px}
+  .grid{gap:12px}.two,.three,.form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .field input,.field select,.field textarea,.search{min-height:48px;font-size:16px;border-radius:12px}
+  .btn{min-height:44px;border-radius:12px}.actions{gap:8px}.actions.mobile-stack{display:grid;grid-template-columns:1fr}
+  .notice{border-radius:12px;padding:11px 13px}
+
+  /* drawer */
+  .sidebar{width:min(82vw,290px);padding:22px 16px;z-index:100;overflow-y:auto}
+  body.nav-open{overflow:hidden}
+  body.nav-open:after{content:"";position:fixed;inset:0;background:rgba(17,24,39,.35);backdrop-filter:blur(2px);z-index:90}
+  .sidebar .brand{padding-bottom:20px}.sidebar .nav a{min-height:46px}
+
+  /* service catalogue */
+  #serviceGrid{grid-template-columns:1fr}
+  .service-card{padding:15px;gap:9px}.service-icon{height:88px;border-radius:13px;font-size:28px}
+  .service-card h2{margin-bottom:4px}.booking-hint{font-size:12px}
+  .booking-modal{padding:0;align-items:flex-end}
+  .booking-modal-dialog{width:100%;max-height:92dvh;border-radius:22px 22px 0 0;padding:22px 16px 18px}
+  .booking-modal-dialog h2{font-size:26px;margin-right:42px}
+  .booking-modal-close{top:14px;right:14px}
+  .time-slots{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  .time-slot{min-height:54px;padding:7px 4px}
+  .payment-options{grid-template-columns:1fr!important}
+  .gcash-payment-box{padding:14px!important}.gcash-payment-layout{grid-template-columns:1fr!important;text-align:center}
+  .gcash-qr-trigger,.gcash-number-row{margin-left:auto;margin-right:auto;justify-content:center}
+  .modal-actions{position:sticky;bottom:-18px;background:var(--card);padding:10px 0 0;z-index:2}
+
+  /* appointment details */
+  .appointment-qr-card{text-align:center;padding:15px!important}
+  .appointment-qr{width:min(220px,76vw)!important;height:auto!important;max-width:100%}
+  .qr-reference{overflow-wrap:anywhere;font-size:15px!important}
+  .timeline-item{padding-left:20px;padding-bottom:18px}
+  .main .grid.two>.card .grid.two{grid-template-columns:1fr 1fr;gap:10px}
+  .main .grid.two>.card .grid.two p{margin-top:4px;overflow-wrap:anywhere}
+  .main .grid.two>.card>.actions{display:grid;grid-template-columns:1fr 1fr}.main .grid.two>.card>.actions .btn{width:100%}
+
+  /* calendar */
+  .main>.actions[style*="margin-bottom"]{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+  .main>.actions[style*="margin-bottom"] .btn{padding:9px 6px;font-size:13px;white-space:nowrap}
+  .calendar-card{padding:12px 8px}.calendar-legend{font-size:11px;margin:0 4px 10px}
+  .calendar-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+  .calendar-grid>.muted{font-size:10px;overflow:hidden}
+  .day{min-height:58px;padding:4px 3px;border-radius:8px;overflow:hidden;position:relative}
+  .day strong{font-size:11px}.today-badge{display:none!important}
+  .event-dot{width:100%;padding:3px;margin-top:3px;border-radius:5px;font-size:0;white-space:nowrap;overflow:hidden}
+  .event-dot:before{content:"•";font-size:16px;line-height:8px}
+
+  /* announcements */
+  [data-live-scope]>.grid.two{grid-template-columns:1fr}
+  [data-live-scope]>.grid.two article.card{padding:17px}
+  [data-live-scope]>.grid.two article.card p{overflow-wrap:anywhere}
+
+  /* profile */
+  .profile-photo-editor{padding:12px;align-items:center;text-align:center}
+  .profile-photo-preview{width:82px;height:82px;flex-basis:82px}
+  .profile-photo-editor>div:last-child{width:100%}
+  .profile-photo-editor input[type=file]{width:100%;font-size:13px}
+  .address-fields{gap:12px}
+  .main .grid.two>.card form .btn{width:100%}
+
+  /* filter bars */
+  .live-filter-bar{gap:9px;padding:11px;border-radius:14px}.live-filter-meta{padding:0 2px 2px}
+}
+@media(max-width:430px){
+  .main{padding-left:12px;padding-right:12px}
+  .topbar h1{font-size:25px}
+  .card{padding:15px}
+  .main .grid.two>.card .grid.two{grid-template-columns:1fr}
+  .parish-dashboard-stats{grid-template-columns:1fr 1fr}
+  .time-slots{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Administrator access management */
+.admin-account-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.admin-create-card,.admin-list-card{min-width:0}
+.admin-card-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:18px}
+.admin-card-heading h2,.admin-list-heading h2{margin:3px 0 0}
+.admin-card-heading>p{max-width:310px;margin:0;text-align:right}
+.admin-name-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field-help{display:block;margin-top:6px;color:var(--muted);font-size:12px}
+.password-rules{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0 18px}
+.password-rules span{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--soft);color:var(--muted);font-size:12px}
+.password-rules span:before{content:"✓ ";font-weight:700;color:var(--ink)}
+.admin-create-actions{display:flex;justify-content:flex-end}.admin-create-actions .btn{min-width:190px}
+.admin-list-heading{align-items:center;margin-bottom:14px}.admin-total{white-space:nowrap;color:var(--muted);font-size:13px}
+.admin-filter-bar{grid-template-columns:minmax(0,1fr) 140px;align-items:end}.admin-filter-bar [data-live-clear]{justify-self:start}.admin-filter-bar .live-filter-meta{align-self:center}
+.admin-account-list{display:grid;gap:0}
+.admin-account-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;padding:18px 2px;border-bottom:1px solid var(--line)}
+.admin-account-row:last-child{border-bottom:0}.admin-account-main{min-width:0}
+.admin-account-title{margin-bottom:5px}.admin-account-title strong{display:block;overflow-wrap:anywhere}
+.admin-account-contact{display:flex;flex-wrap:wrap;gap:5px 14px;color:var(--muted);font-size:14px;margin-bottom:4px}.admin-account-contact span{overflow-wrap:anywhere}
+.admin-account-contact span+span:before{content:"•";margin-right:14px;color:var(--line)}
+.admin-account-controls{min-width:112px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:10px}
+.admin-account-badges{display:flex;align-items:center;justify-content:flex-end;gap:6px;min-height:30px}.badge.subtle{opacity:.75}
+.admin-account-action{margin:0;display:flex;justify-content:flex-end}.admin-account-action .btn{min-width:100px}
+
+@media(max-width:900px){.admin-account-grid{grid-template-columns:1fr}.admin-card-heading>p{max-width:none}}
+@media(max-width:760px){.admin-card-heading{display:block}.admin-card-heading>p{text-align:left;margin-top:6px}.admin-name-grid{grid-template-columns:1fr}.admin-create-actions .btn{width:100%}.admin-filter-bar{grid-template-columns:1fr}.admin-filter-bar .btn{width:100%}.admin-account-row{grid-template-columns:1fr;align-items:start;gap:12px}.admin-account-controls{width:100%;min-width:0;align-items:flex-start}.admin-account-badges{justify-content:flex-start}.admin-account-action,.admin-account-action .btn{width:100%}.admin-account-contact{display:grid;gap:3px}.admin-account-contact span+span:before{content:none}.password-rules{gap:5px}.password-rules span{font-size:11px}}
+
+/* Admin services: focused list + add/edit modal */
+.services-full-card{width:100%;min-width:0}.services-full-card .service-manager-head{margin-bottom:4px}.services-full-card .service-filter{grid-template-columns:minmax(260px,1fr) minmax(170px,240px) auto}.service-modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(18,24,33,.48);backdrop-filter:blur(3px)}.service-modal.open{display:flex}.service-modal-dialog{width:min(720px,100%);max-height:90vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 24px 70px rgba(0,0,0,.22)}.service-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:18px}.service-modal-head h2{margin:3px 0 4px}.service-modal-head p{margin:0}.service-modal-close{border:0;background:var(--sand);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:24px;line-height:1;flex:0 0 auto}.service-modal .form-grid{grid-template-columns:1fr 1fr}.service-modal .field.full,.service-modal .full{grid-column:1/-1}.service-modal .modal-actions{display:flex;justify-content:flex-end;gap:8px}.service-modal .modal-actions .btn:last-child{min-width:150px}@media(max-width:700px){.topbar-actions{width:100%;justify-content:stretch}.topbar-actions .btn{width:100%}.services-full-card .service-filter{grid-template-columns:1fr}.service-modal{padding:0;align-items:flex-end}.service-modal-dialog{max-height:92dvh;border-radius:22px 22px 0 0;padding:22px 16px}.service-modal .form-grid{grid-template-columns:1fr}.service-modal .field.full,.service-modal .full{grid-column:auto}.service-modal .modal-actions{flex-direction:column-reverse}.service-modal .modal-actions .btn{width:100%}}
+
+/* Wedding booking wizard */
+.booking-modal-dialog:has(.wedding-progress:not([hidden])){width:min(860px,100%)}
+.wedding-progress{display:flex!important;align-items:center;gap:8px;margin:2px 0 20px;padding:12px 4px;border-bottom:1px solid var(--line)}
+.wedding-progress[hidden]{display:none!important}.wedding-progress>i{height:1px;background:var(--line);flex:1}.wedding-step-dot{border:0;background:transparent;display:flex;align-items:center;gap:7px;color:var(--muted);font:inherit;padding:0;cursor:default}.wedding-step-dot b{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--muted);font-size:12px}.wedding-step-dot.is-active{color:var(--ink);font-weight:700}.wedding-step-dot.is-active b{background:var(--navy);color:#fff}.wedding-step{margin:0}.wedding-step[hidden],.standard-booking-fields[hidden],.payment-and-notes[hidden],.wedding-wizard-actions[hidden]{display:none!important}.step-heading{margin-bottom:18px}.step-heading>span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.step-heading h3{font-family:Georgia,serif;font-size:24px;margin:4px 0}.step-heading p{margin:0;color:var(--muted)}.wizard-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.standard-booking-fields,.payment-and-notes{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:14px}.requirements-list{display:grid;gap:10px}.requirements-list>label,.civil-choice{display:grid;grid-template-columns:1fr minmax(220px,42%);gap:16px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:13px 14px;background:#fff}.requirements-list label span{display:grid;gap:2px}.requirements-list small{color:var(--muted)}.civil-choice{grid-template-columns:1fr 1fr}.civil-choice>b{grid-column:1/-1}.civil-choice>input[type=file]{grid-column:1/-1}.wedding-warning{margin-top:14px}.wedding-fee-summary{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--sand);margin-bottom:4px}.wedding-wizard-actions{display:flex!important;justify-content:flex-end;gap:10px}.wedding-wizard-actions[hidden]{display:none!important}.wedding-wizard-actions .btn:last-child,.wedding-wizard-actions #weddingNext{min-width:150px}.wedding-only-label{display:none}.booking-modal-dialog:has(.wedding-progress:not([hidden])) .wedding-only-label{display:inline}
+@media(max-width:700px){.wedding-progress{gap:4px}.wedding-progress>i{display:none}.wedding-step-dot{flex:1;justify-content:center}.wedding-step-dot span{display:none}.wizard-grid,.standard-booking-fields,.payment-and-notes{grid-template-columns:1fr}.requirements-list>label,.civil-choice{grid-template-columns:1fr}.civil-choice>b,.civil-choice>input[type=file]{grid-column:auto}.wedding-wizard-actions{display:grid!important;grid-template-columns:1fr 1fr}.wedding-wizard-actions[hidden]{display:none!important}.wedding-wizard-actions .btn{width:100%;min-width:0!important}}
+\n\n/* Wedding wizard v2: fixed progress + always-visible navigation */
+.booking-modal-dialog.wedding-mode{width:min(900px,100%);max-height:calc(100dvh - 48px);overflow-y:auto;overscroll-behavior:contain;padding-bottom:0}
+.booking-modal-dialog.wedding-mode #bookingForm{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.booking-modal-dialog.wedding-mode .wedding-progress{position:sticky;top:-1px;z-index:8;grid-column:1/-1;display:flex!important;flex-direction:row!important;align-items:center;justify-content:space-between;gap:8px;margin:0 0 18px;padding:12px 4px 14px;background:var(--card);border-bottom:1px solid var(--line)}
+.booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot{appearance:none!important;-webkit-appearance:none!important;width:auto!important;min-width:0!important;flex:0 0 auto!important;border:0!important;background:transparent!important;padding:0!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:7px!important;box-shadow:none!important;border-radius:0!important;color:var(--muted)}
+.booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot b{width:30px;height:30px;flex:0 0 30px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--muted);font-size:12px}
+.booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot.is-active{color:var(--ink);font-weight:700}
+.booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot.is-active b{background:var(--navy);color:#fff}
+.booking-modal-dialog.wedding-mode .wedding-progress>i{display:block;flex:1 1 30px;min-width:18px;height:1px;background:var(--line)}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions{position:sticky;bottom:0;z-index:10;grid-column:1/-1;display:flex!important;align-items:center;justify-content:flex-end;gap:10px;margin:10px -30px 0;padding:14px 30px 18px;background:linear-gradient(to bottom,rgba(255,253,249,.94),var(--card) 28%);border-top:1px solid var(--line);box-shadow:0 -10px 24px rgba(35,29,20,.04)}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions[hidden]{display:none!important}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions .wedding-cancel{margin-right:auto}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions .btn{min-width:120px}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions #weddingNext,.booking-modal-dialog.wedding-mode .wedding-wizard-actions #weddingSubmit{min-width:170px}
+@media(max-width:700px){
+ .booking-modal-dialog.wedding-mode{max-height:94dvh;padding-bottom:0}
+ .booking-modal-dialog.wedding-mode #bookingForm{grid-template-columns:1fr}
+ .booking-modal-dialog.wedding-mode .wedding-progress{top:-1px;padding:10px 0 12px;gap:4px}
+ .booking-modal-dialog.wedding-mode .wedding-progress>i{display:block;min-width:8px}
+ .booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot{flex:0 0 auto!important}
+ .booking-modal-dialog.wedding-mode .wedding-progress .wedding-step-dot span{display:none!important}
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions{display:grid!important;grid-template-columns:1fr 1fr;margin:10px -16px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions .wedding-cancel{display:none}
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions .btn{width:100%;min-width:0!important}
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions #weddingBack[hidden]+#weddingNext{grid-column:1/-1}
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions #weddingBack[hidden]~#weddingSubmit:not([hidden]){grid-column:1/-1}
+}
+
+/* Wedding wizard visibility + footer cleanup */
+.booking-modal-dialog.wedding-mode .standard-actions[hidden]{display:none!important}
+.booking-modal-dialog.wedding-mode #weddingBack[hidden],
+.booking-modal-dialog.wedding-mode #weddingNext[hidden],
+.booking-modal-dialog.wedding-mode #weddingSubmit[hidden]{display:none!important}
+.booking-modal-dialog.wedding-mode .wedding-step[hidden],
+.booking-modal-dialog.wedding-mode .standard-booking-fields[hidden],
+.booking-modal-dialog.wedding-mode .payment-and-notes[hidden]{display:none!important}
+.booking-modal-dialog.wedding-mode .wizard-grid{align-items:start}
+.booking-modal-dialog.wedding-mode .wedding-step .field{margin:0}
+.booking-modal-dialog.wedding-mode .wedding-wizard-actions{min-height:72px}
+@media(max-width:700px){
+ .booking-modal-dialog.wedding-mode .wedding-wizard-actions{min-height:auto}
+ .booking-modal-dialog.wedding-mode #weddingNext:not([hidden]),
+ .booking-modal-dialog.wedding-mode #weddingSubmit:not([hidden]){grid-column:2}
+ .booking-modal-dialog.wedding-mode #weddingBack:not([hidden]){grid-column:1}
+}
+
+/* Wedding step 1: clearly separate groom and bride into vertical columns */
+.booking-modal-dialog.wedding-mode .couple-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.booking-modal-dialog.wedding-mode .couple-person-card{display:grid;gap:14px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.booking-modal-dialog.wedding-mode .couple-person-heading{display:flex;align-items:center;gap:11px;padding-bottom:13px;border-bottom:1px solid var(--line)}
+.booking-modal-dialog.wedding-mode .couple-person-heading .couple-number{width:34px;height:34px;flex:0 0 34px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:700}
+.booking-modal-dialog.wedding-mode .couple-person-heading h4,.booking-modal-dialog.wedding-mode .couple-contact-heading h4{margin:0;font-family:Georgia,serif;font-size:19px;color:var(--ink)}
+.booking-modal-dialog.wedding-mode .couple-person-heading p,.booking-modal-dialog.wedding-mode .couple-contact-heading p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.booking-modal-dialog.wedding-mode .couple-contact-block{margin-top:18px;padding-top:17px;border-top:1px solid var(--line)}
+.booking-modal-dialog.wedding-mode .couple-contact-heading{margin-bottom:12px}
+@media(max-width:700px){.booking-modal-dialog.wedding-mode .couple-columns{grid-template-columns:1fr;gap:14px}.booking-modal-dialog.wedding-mode .couple-person-card{padding:15px}.booking-modal-dialog.wedding-mode .couple-contact-block{margin-top:14px}}
+
+.requirements-list .file-count{display:block;margin-top:5px;color:var(--muted);font-size:12px}.requirements-list input[type=file]{max-width:100%}
+
+
+/* Wedding requirements: additive multi-document uploader */
+.requirements-list .selected-document-list{width:100%;margin-top:8px}
+.requirements-list .file-count.has-files{color:var(--ink);font-weight:700}
+.requirements-list .selected-document-items{display:grid;gap:6px;margin-top:7px}
+.requirements-list .selected-document-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--sand)}
+.requirements-list .selected-document-item span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+.requirements-list .remove-document{border:0;border-radius:8px;padding:6px 9px;background:#fff;color:#7a3434;cursor:pointer;font:inherit;font-size:12px;flex:0 0 auto}
+.requirements-list .remove-document:hover{background:#f8eeee}
+@media(max-width:700px){.requirements-list .selected-document-item{align-items:flex-start}.requirements-list .remove-document{padding:5px 8px}}
+
+/* Wedding upload size guard */
+.wedding-upload-meter{margin-top:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.wedding-upload-meter>div:first-child{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.wedding-upload-meter small{display:block;margin-top:7px;color:var(--muted)}
+.upload-meter-track{height:7px;margin-top:9px;border-radius:999px;background:var(--sand);overflow:hidden}
+.upload-meter-track i{display:block;height:100%;width:0;background:var(--navy);border-radius:inherit;transition:width .2s ease}
+.wedding-upload-meter.is-over{border-color:#b65a5a;background:#fff7f7}
+.wedding-upload-meter.is-over #weddingUploadSize{color:#8d2f2f;font-weight:700}
+.wedding-upload-meter.is-over .upload-meter-track i{background:#8d2f2f}
+
+
+/* Booking submission confirmation */
+.submission-success-overlay{position:fixed;inset:0;z-index:3000;display:grid;place-items:center;padding:20px;background:rgba(19,29,43,.56);backdrop-filter:blur(4px);animation:submissionFadeIn .22s ease both}
+.submission-success-card{width:min(520px,100%);padding:34px 32px 30px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:0 28px 80px rgba(18,27,40,.24);animation:submissionPopIn .35s cubic-bezier(.2,.8,.2,1) both}
+.submission-success-icon{width:76px;height:76px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:#e6f1e9}
+.submission-success-icon span{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#2f6b45;color:#fff;font-size:28px;font-weight:800;animation:submissionCheck .45s .12s ease both}
+.submission-success-card h2{margin:7px 0 10px;font-family:Georgia,serif;font-size:30px;line-height:1.15;color:var(--ink)}
+.submission-success-card>p{margin:0 auto 16px;max-width:430px;color:var(--muted);line-height:1.6}
+.submission-reference{margin:18px auto;padding:13px 16px;max-width:360px;border:1px solid var(--line);border-radius:13px;background:var(--sand);display:grid;gap:3px}
+.submission-reference span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.submission-reference strong{font-size:17px;letter-spacing:.03em;color:var(--ink)}
+.submission-success-card .submission-success-note{font-size:13px;margin-bottom:20px}
+.submission-success-btn{min-width:210px}
+@keyframes submissionFadeIn{from{opacity:0}to{opacity:1}}
+@keyframes submissionPopIn{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes submissionCheck{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+@media(max-width:600px){.submission-success-card{padding:28px 20px 24px;border-radius:20px}.submission-success-card h2{font-size:25px}.submission-success-icon{width:66px;height:66px}.submission-success-btn{width:100%}}
+
+/* Baptism booking wizard */
+.booking-modal-dialog.wedding-mode .baptism-step[hidden]{display:none!important}
+.baptism-type-options{margin-bottom:16px}
+.additional-godparents{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.additional-godparents-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px}
+.additional-godparents-head>div{display:grid;gap:2px}.additional-godparents-head small{color:var(--muted)}
+#godparentList{display:grid;gap:9px}.godparent-row{display:grid;grid-template-columns:1fr auto;gap:9px;align-items:center}.godparent-row input{width:100%}
+@media(max-width:700px){.additional-godparents-head{align-items:flex-start;flex-direction:column}.godparent-row{grid-template-columns:1fr}.godparent-row .btn{width:100%}}
+
+/* Keep the Wedding and Baptism wizard headers mutually exclusive.
+   The modal's wedding-mode layout uses !important, so hidden must win here. */
+.booking-modal-dialog.wedding-mode .wedding-progress[hidden]{display:none!important}
+
+/* Booking wizard progress isolation: never render Wedding and Baptism headers together. */
+#bookingModal #weddingProgress[hidden],
+#bookingModal #baptismProgress[hidden]{display:none!important}
+
+/* Baptism wizard controls: respect step visibility exactly like Wedding. */
+.booking-modal-dialog.wedding-mode #baptismBack[hidden],
+.booking-modal-dialog.wedding-mode #baptismNext[hidden],
+.booking-modal-dialog.wedding-mode #baptismSubmit[hidden]{display:none!important}
+@media(max-width:700px){
+ .booking-modal-dialog.wedding-mode #baptismNext:not([hidden]),
+ .booking-modal-dialog.wedding-mode #baptismSubmit:not([hidden]){grid-column:2}
+ .booking-modal-dialog.wedding-mode #baptismBack:not([hidden]){grid-column:1}
+ .booking-modal-dialog.wedding-mode #baptismBack[hidden]+#baptismNext{grid-column:1/-1}
+}
+
+/* Structured legal-name fields used by Wedding and Baptism booking wizards. */
+#bookingModal .registration-name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#bookingModal .registration-name-grid .name-last{grid-column:1/-1}
+#bookingModal .registration-name-grid .field{margin:0}
+#bookingModal .registration-name-grid small{font-weight:400;color:var(--muted)}
+#bookingModal .parent-name-columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#bookingModal .person-name-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:#fff}
+#bookingModal .person-name-card h4{margin:0 0 14px;font-family:Georgia,serif;font-size:18px}
+#bookingModal .person-name-block>span{display:block;margin-bottom:8px}
+@media(max-width:700px){#bookingModal .parent-name-columns{grid-template-columns:1fr}#bookingModal .registration-name-grid{grid-template-columns:1fr}#bookingModal .registration-name-grid .name-last{grid-column:auto}}
+
+/* Baptism Section 1: compact two-column information cards */
+#bookingModal .baptism-info-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+#bookingModal .baptism-detail-card{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+#bookingModal .baptism-card-heading{display:flex;align-items:center;gap:12px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+#bookingModal .baptism-card-heading h4{margin:0;font-family:Georgia,serif;font-size:18px}
+#bookingModal .baptism-card-heading small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+#bookingModal .baptism-card-icon{width:36px;height:36px;flex:0 0 36px;border-radius:50%;display:grid;place-items:center;background:var(--navy,#132238);color:#fff;font-weight:700}
+#bookingModal .baptism-name-stack{display:grid;grid-template-columns:1fr;gap:12px}
+#bookingModal .baptism-name-stack .field{margin:0}
+#bookingModal .baptism-birth-stack{display:grid;grid-template-columns:1fr;gap:12px}
+#bookingModal .baptism-birth-stack .field,#bookingModal .baptism-birth-stack .field.full{grid-column:auto;margin:0}
+#bookingModal .baptism-parent-columns .person-name-card{padding:18px}
+#bookingModal .baptism-parent-columns .person-name-card>h4{display:none}
+@media(max-width:760px){#bookingModal .baptism-info-columns,#bookingModal .baptism-parent-columns{grid-template-columns:1fr}#bookingModal .baptism-detail-card{padding:15px}}
+\n\n/* Baptism Section 1 layout fix: keep the requested left/right card structure compact. */
+#bookingModal .baptism-section-one{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#bookingModal .baptism-section-one>.full{grid-column:1/-1}
+#bookingModal .baptism-info-columns,
+#bookingModal .baptism-parent-columns{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:18px!important;width:100%}
+#bookingModal .baptism-detail-card{min-width:0;padding:18px!important;border:1px solid var(--line)!important;border-radius:16px!important;background:#fff!important}
+#bookingModal .baptism-card-heading{display:flex!important;align-items:center;gap:12px;padding-bottom:13px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+#bookingModal .baptism-card-icon{display:grid!important;width:36px;height:36px;flex:0 0 36px;place-items:center;border-radius:50%;background:var(--navy,#132238);color:#fff;font-weight:700}
+#bookingModal .baptism-child-name-grid,
+#bookingModal .baptism-parent-name-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+#bookingModal .baptism-child-name-grid .field,
+#bookingModal .baptism-parent-name-grid .field{min-width:0}
+#bookingModal .baptism-parent-name-grid .baptism-name-last{grid-column:1/-1}
+#bookingModal .baptism-birth-stack{display:grid!important;grid-template-columns:1fr!important;gap:12px}
+#bookingModal .baptism-birth-stack .address-help{margin:0}
+@media(max-width:760px){
+ #bookingModal .baptism-section-one{grid-template-columns:1fr}
+ #bookingModal .baptism-info-columns,#bookingModal .baptism-parent-columns{grid-template-columns:1fr!important}
+ #bookingModal .baptism-child-name-grid,#bookingModal .baptism-parent-name-grid{grid-template-columns:1fr}
+ #bookingModal .baptism-parent-name-grid .baptism-name-last{grid-column:auto}
+}

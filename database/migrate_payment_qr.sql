@@ -1,0 +1,4 @@
+USE smart_parish;
+CREATE TABLE IF NOT EXISTS payment_settings (id TINYINT UNSIGNED PRIMARY KEY DEFAULT 1,gcash_account_name VARCHAR(160) NULL,gcash_number VARCHAR(30) NULL,gcash_qr_path VARCHAR(255) NULL,updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+INSERT IGNORE INTO payment_settings(id) VALUES(1);
+ALTER TABLE appointments ADD COLUMN payment_method ENUM('cash','online') NOT NULL DEFAULT 'cash' AFTER admin_note, ADD COLUMN receipt_path VARCHAR(255) NULL AFTER payment_method, ADD COLUMN payment_status ENUM('not_required','pending','verified','rejected') NOT NULL DEFAULT 'not_required' AFTER receipt_path, ADD COLUMN payment_verified_at DATETIME NULL AFTER payment_status, ADD COLUMN payment_verified_by INT UNSIGNED NULL AFTER payment_verified_at, ADD COLUMN qr_confirmed_at DATETIME NULL AFTER payment_verified_by, ADD COLUMN qr_confirmed_by INT UNSIGNED NULL AFTER qr_confirmed_at;

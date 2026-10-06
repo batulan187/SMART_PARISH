@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS baptism_booking_details (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  appointment_id BIGINT UNSIGNED NOT NULL UNIQUE,
+  child_full_name VARCHAR(245) NOT NULL,
+  child_dob DATE NOT NULL,
+  child_birth_place VARCHAR(255) NOT NULL,
+  father_full_name VARCHAR(245) NOT NULL,
+  mother_maiden_name VARCHAR(245) NOT NULL,
+  parents_marriage_status VARCHAR(60) NOT NULL,
+  contact_number VARCHAR(30) NOT NULL,
+  contact_email VARCHAR(190) NOT NULL,
+  baptism_type VARCHAR(40) NOT NULL,
+  principal_male_godparent VARCHAR(245) NOT NULL,
+  principal_female_godparent VARCHAR(245) NOT NULL,
+  additional_godparents TEXT NULL,
+  extra_godparent_count INT UNSIGNED NOT NULL DEFAULT 0,
+  extra_godparent_fee DECIMAL(10,2) NOT NULL DEFAULT 0,
+  psa_birth_certificate VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(appointment_id) REFERENCES appointments(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
